@@ -1,0 +1,9 @@
+pandas>=2.0.0
+scikit-learn>=1.2.0
+xgboost>=1.7.0
+lightgbm>=3.3.0
+tensorflow>=2.15.0
+nltk>=3.8.0
+optuna>=3.3.0
+matplotlib>=3.7.0
+numpy>=1.23.0
