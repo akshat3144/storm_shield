@@ -1,0 +1,7 @@
+https://www.kaggle.com/models/akshat3144/storm_rf_model-1/ScikitLearn/default/1
+
+https://www.kaggle.com/models/akshat3144/severity_rf_model-1/ScikitLearn/default/1
+
+https://www.kaggle.com/models/akshat3144/low_severity_rf_model-1/ScikitLearn/default/1
+https://www.kaggle.com/models/akshat3144/medium_severity_rf_model-1/ScikitLearn/default/1
+https://www.kaggle.com/models/akshat3144/high_severity_rf_model-1/ScikitLearn/default/1
