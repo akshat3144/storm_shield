@@ -1,8 +1,8 @@
-# Dynamic Rhythms
+# StormShield: Predictive Power Outage Forecasting
 
 ## Overview
 
-**Dynamic Rhythms** is a machine learning-based project designed to predict storm severity and related power outages using meteorological and infrastructure data. It incorporates a complete ML pipeline from data preprocessing to model deployment using Random Forest, LightGBM, and Feedforward Neural Networks. The objective is to enhance disaster readiness and outage management.
+**StormShield** is a machine learning-based project designed to predict storm severity and related power outages using meteorological and infrastructure data. It incorporates a complete ML pipeline from data preprocessing to model deployment using Random Forest, LightGBM, and Feedforward Neural Networks. The objective is to enhance disaster readiness and outage management.
 
 ![Pipeline Flowchart](pipeline_flowchart.png)
 
@@ -59,4 +59,4 @@ Listed in `requirements.txt`:
 * `tensorflow>=2.15.0`
 * `nltk>=3.8.0`
 * `optuna>=3.3.0`
-* `matplotlib>=3.7.0`
+* `matplotlib>=3.7.0`y
