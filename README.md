@@ -29,9 +29,9 @@ Dynamic_Rhythms/
 │   ├── 03_processed_data_final.txt
 │   └── 04_split_data.txt
 ├── models/
-│   ├── 01_storm_prediction_model.ipynb
-│   ├── 02_severity_prediction_model.ipynb
-│   └── 03_outage_prediction_model.ipynb
+│   ├── 01_storm_rf_model.ipynb
+│   ├── 02_severity_xgb_model.ipynb
+│   └── 03_outage_lgm_rf_fnn_model.ipynb
 ├── notebooks/
 │   ├── 01_initial_storm_severity_outage_prediction.ipynb
 │   └── 02_prediction_pipeline_main.ipynb
