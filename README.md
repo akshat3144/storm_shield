@@ -59,7 +59,8 @@ Dynamic_Rhythms/
 │   └── storm_outage_inference_pipeline.ipynb
 ├── preprocessing/
 │   ├── 01_load_clean_merge_data.ipynb
-│   └── 02_lag_feature_engineering.ipynb
+│   ├── 02_lag_feature_engineering.ipynb
+│   └── 03_split_and_encode_data.ipynb
 ├── LICENSE
 ├── pipeline_flowchart.png
 ├── README.md
