@@ -2,11 +2,28 @@
 
 ## Overview
 
-Storms are responsible for 62% of all power outages in the U.S., posing significant risks to vulnerable populations who rely on continuous power for medical devices, as well as causing substantial financial losses to businesses and hampering emergency response operations. Accurate prediction of storm-induced outages is essential, yet existing models struggle particularly with forecasting outages from moderate and low-severity storms. These events often get overlooked in unified models, which fail to capture their distinct characteristics.
+Storms account for 62% of all power outages in the United States, posing significant risks to vulnerable populations who rely on uninterrupted power for medical devices, while also causing major financial losses to businesses and impairing emergency response operations. Accurate prediction of storm-induced power outages is therefore essential. However, existing models often underperform when it comes to forecasting outages caused by moderate and low-severity storms—events that are frequently overlooked in unified modeling approaches that fail to capture their distinct characteristics.
 
-To address this, we developed a storm severity-aware prediction framework that routes storm events to dedicated machine learning models based on severity. We used data from EAGLE-I, NOAA Storm Events, and PRISM Climate records from 2014 to 2023 to align storm occurrences with power outages and environmental data. Our preprocessing included Random Forest regression for missing data imputation, normalization with time zone alignment, and elimination of sparse or irrelevant features. Additionally, we applied NLP techniques on event narratives, combining them with structured environmental features.
+To address this challenge, a **storm severity-aware prediction framework** was developed. This framework routes storm events to **dedicated machine learning models** based on their severity. It utilizes data from **EAGLE-I**, **NOAA Storm Events**, and **PRISM Climate records** spanning 2014 to 2023, aligning storm occurrences with corresponding power outages and environmental variables.
 
-Our pipeline begins by predicting storm occurrence one hour in advance using XGBoost (F1-score: 0.9308). A subsequent LightGBM model classifies storm severity (F1-score: 0.9329), followed by severity-specific outage prediction models: LightGBM for low severity (0.9878), XGBoost for medium (0.9739), and Random Forest for high severity storms (0.9755). Our models are competitive with state-of-the-art models. We also developed a custom metric aggregating F1 scores across pipeline stages to better reflect real-world performance, achieving a combined score of 0.8503.
+Preprocessing included:
+
+* **Missing data imputation** using Random Forest regression
+* **Time zone alignment and normalization**
+* **Feature selection** to remove sparse or irrelevant data
+* Integration of **NLP-based features** extracted from storm event narratives, combined with structured environmental features
+
+The prediction pipeline consists of three stages:
+
+1. **Storm occurrence prediction** one hour in advance using **XGBoost** (F1-score: **0.9308**)
+2. **Storm severity classification** using **LightGBM** (F1-score: **0.9329**)
+3. **Outage prediction** via severity-specific models:
+
+   * **LightGBM** for low-severity storms (F1-score: **0.9878**)
+   * **XGBoost** for medium-severity storms (F1-score: **0.9739**)
+   * **Random Forest** for high-severity storms (F1-score: **0.9755**)
+
+This framework demonstrates competitive performance compared to state-of-the-art models. Additionally, a **custom metric** was proposed to aggregate F1 scores across all pipeline stages, offering a more realistic evaluation of end-to-end performance. This metric achieved a combined score of **0.8503**.
 
 ![Pipeline Flowchart](pipeline_flowchart.png)
 
