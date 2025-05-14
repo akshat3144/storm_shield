@@ -1,7 +1,7 @@
-https://www.kaggle.com/models/akshat3144/storm_rf_model-1/ScikitLearn/default/1
+https://www.kaggle.com/models/akshat3144/storm_xgb_model/ScikitLearn/default/1
 
-https://www.kaggle.com/models/akshat3144/severity_xg_model/ScikitLearn/default/1
+https://www.kaggle.com/models/akshat3144/severity_lgb_model-1/ScikitLearn/default/1
 
-https://www.kaggle.com/models/akshat3144/low_severity_lgm_model/ScikitLearn/default/1
-https://www.kaggle.com/models/akshat3144/medium_severity_rf_model-1/ScikitLearn/default/1
-https://www.kaggle.com/models/akshat3144/high_severity_fnn_model/TensorFlow2/default/1
+https://www.kaggle.com/models/akshat3144/low_severity_lgm_model-1/ScikitLearn/default/1
+https://www.kaggle.com/models/akshat3144/medium_severity_xgb_model/ScikitLearn/default/1
+https://www.kaggle.com/models/akshat3144/high_severity_rf_model-2/ScikitLearn/default/1
