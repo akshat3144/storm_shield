@@ -51,16 +51,25 @@ Dynamic_Rhythms/
 │   ├── 03_processed_data_final.txt
 │   └── 04_split_data.txt
 ├── models/
-│   ├── 01_storm_xgb_model.ipynb
+│   ├── 01a_storm_xgb_model.ipynb
+│   ├── 01b_storm_lstm_model.ipynb
 │   ├── 02_severity_lgm_model.ipynb
 │   ├── 03_outage_lgm_xgb_rf_model.ipynb
 │   └── 04_models.txt
 ├── notebooks/
-│   └── storm_outage_inference_pipeline.ipynb
+│   ├── storm_outage_inference_pipeline_[one-to-one-forecasting].ipynb
+│   └── storm_outage_inference_pipeline_[many-to-one-forecasting].ipynb
+├── plots/
+│   ├── 01_storm_forecasting/
+│   ├── 02_severity_prediction/
+│   └── 03_outage_prediction/
 ├── preprocessing/
 │   ├── 01_load_clean_merge_data.ipynb
 │   ├── 02_lag_feature_engineering.ipynb
 │   └── 03_split_and_encode_data.ipynb
+├── scripts/
+│   ├── 01_lag_window_[45-75min].py
+│   └── 02_lag_window_[1-2hr].py
 ├── LICENSE
 ├── pipeline_flowchart.png
 ├── README.md
